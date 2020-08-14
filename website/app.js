@@ -33,7 +33,6 @@ function performAction(e) {
     // reset form
     form.reset();
 }
-
 /* Function to GET Web API Data*/
 const getWeather = async(baseURL, newZip, apiKey) => {
     // res equals to the result of fetch function
@@ -46,7 +45,6 @@ const getWeather = async(baseURL, newZip, apiKey) => {
         console.log("error", error);
     }
 };
-
 /* Function to POST data */
 const postData = async(url = '', data = {}) => {
     const req = await fetch(url, {
